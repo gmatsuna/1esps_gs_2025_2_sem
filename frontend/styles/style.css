@@ -13,8 +13,8 @@ header {
     background: #0F4A2F;
     width: 100%;
     box-shadow: 1px 1px 1px #00000070;
-    /* position: fixed;
-    top: 0; */
+    position: fixed;
+    top: 0;
 }
 
 nav ul {
@@ -35,6 +35,8 @@ nav ul {
             border: 1px solid #000;
             border-radius: 15px;
             margin: 5px 15px;
+            width: 250px;
+            text-align: center;
         }
 
         a:hover {
@@ -52,12 +54,12 @@ main {
 }
 
 #banner {
-    border: 2px solid #ff0000;
     background-image: url(../images/banner.png);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 500px;
+    padding: 70px;
 }
 
 #banner img {
@@ -66,7 +68,6 @@ main {
 
 #materia {
     background-color: #F5C842;
-    border: 2px solid #ff0000;
     display: flex;
     justify-content: space-evenly;
 }
@@ -93,6 +94,7 @@ main {
 #materia__img img {
     border: 2px solid #000;
     width: 800px;
+    height: 100%;
 }
 
 #tecnologias {
@@ -110,7 +112,6 @@ main {
 }
 
 #tecnologias__box {
-    border: 2px solid #ff0000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,5 +130,72 @@ main {
 }
 
 #resultados {
-    border: 2px solid #ff0000;
+    background-color: #1A1A1A;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#resultados__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados__itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 500px;
+    }
+}
+
+.resultados__texto {
+    width: 500px;
+    padding: 25px;
+
+    h3 {
+        margin-bottom: 25px;
+    }
+}
+
+footer {
+    border: 2px solid red;
+    background-color: #E6E9EC;
+    color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rm {
+    display: flex;
+    gap: 25px;
+}
+
+.nomes {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contatos {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fa-brands {
+    width: 300px;
+    font-size: 35px;
 }

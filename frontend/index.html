@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
 </head>
@@ -11,10 +13,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#banner">Banner</a></li>
-                <li><a href="#">Matéria</a></li>
-                <li><a href="#">Tecnologias</a></li>
-                <li><a href="#">Resultados</a></li>
+                <li><a href="#banner"><i class='bx  bx-home'    ></i> Banner</a></li>
+                <li><a href="#materia"><i class='bx  bx-newspaper'    ></i>   Matéria</a></li>
+                <li><a href="#tecnologias"><i class='bx  bx-solar-panel'    ></i>  Tecnologias</a></li>
+                <li><a href="#resultados"><i class='bx  bx-happy-beaming'    ></i>  Resultados</a></li>
             </ul>
         </nav>
     </header>
@@ -64,14 +66,14 @@
                     </div>
                 </div>
                 <div class="tecnologias__itens">
-                    <img src="" alt="">
+                    <img src="./images/satelite.webp" alt="Satélite">
                     <div class="tecnologias__texto">
                         <h3>Satélite monitorando áreas rurais</h3>
                         <p>Visão artística realista de um satélite observando áreas agrícolas, com mapa térmico ou NDVI sendo analisado, atmosfera moderna e tecnológica.</p>
                     </div>
                 </div>
                 <div class="tecnologias__itens">
-                    <img src="" alt="">
+                    <img src="./images/robo.webp" alt="robo no campo">
                     <div class="tecnologias__texto">
                         <h3>Robotização no campo</h3>
                         <p>Robô agrícola realizando colheita seletiva em um pomar, com braços mecânicos precisos, fruta sendo colhida sem danos, estilo fotográfico.</p>
@@ -80,12 +82,61 @@
             </div>
         </div>
         <div id="resultados">
-            Resultados
+            <h1>Resultados</h1>
+            <div id="resultados__box">
+                <div class="resultados__itens">
+                    <img src="./images/precisao.jpg" alt="Agricultura de Precisão">
+                    <div class="resultados__texto" id="precisao">
+                        <h3>Agricultura de Precisão</h3>
+                        <p>Com o uso de GPS, sensores de solo e drones, os produtores conseguem mapear suas lavouras com alta precisão, aplicando insumos (fertilizantes, defensivos, sementes) apenas onde é realmente necessário. Isso reduz custos, aumenta a produtividade e minimiza o impacto ambiental.</p>
+                        <br>
+                        <p>Uma lavoura vasta e verde, com fileiras perfeitamente alinhadas de plantas saudáveis sob um céu azul limpo. A iluminação é natural, em tom quente de fim de tarde, destacando o brilho das folhas e a uniformidade do cultivo. Ao fundo, é possível ver discretamente um trator moderno ou drone pequeno, apenas sugerindo o uso de tecnologia, mas o foco é o campo produtivo e próspero.</p>
+                    </div>
+                </div>
+                <div class="resultados__itens">
+                    <div class="resultados__texto" id="maquinas">
+                        <h3>Máquinas Autônomas e Inteligentes</h3>
+                        <p>Tratores e colheitadeiras equipados com inteligência artificial e sensores IoT operam de forma autônoma, monitorando em tempo real as condições do solo, umidade e rendimento. Isso aumenta a eficiência e reduz a necessidade de mão de obra direta nas operações.</p>
+                        <br>
+                        <p>Uma plantação dourada de trigo recém-colhida, com linhas perfeitas e simétricas que mostram precisão nas operações. Ao fundo, uma máquina moderna autônoma (sem operador visível) se desloca sozinha sob o sol da manhã. O foco está nos rastros retos e uniformes deixados no solo</p>
+                    </div>
+                    <img src="./images/maquinas.jpg" alt="Máquinas Autônomas e Inteligentes">
+
+                </div>
+                <div class="resultados__itens">
+                    <img src="./images/irigacao.jpg" alt="Irrigação Inteligente e Sustentável">
+                    <div class="resultados__texto" id="irrigacao">
+                        <h3>Irrigação Inteligente e Sustentável</h3>
+                        <p>Sistemas de irrigação conectados à IoT e integrados a estações meteorológicas fazem o controle automático da água conforme a necessidade real das plantas, economizando até 40% do consumo. Essa automação garante sustentabilidade e maior produtividade.</p>
+                        <br>
+                        <p>Um campo verde vibrante e uniforme, com fileiras de plantas perfeitamente hidratadas sob a luz suave do amanhecer. Pequenos jatos de água saem de um sistema de irrigação moderno (pivô central ou aspersores automáticos), criando uma leve névoa que reflete a luz do sol. O solo parece úmido e fértil, sem excesso de água, transmitindo equilíbrio e eficiência. No horizonte, sensores discretos ou uma estação meteorológica podem ser vistos, sugerindo automação.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
-        footer
+        <div id="rm">
+            <div class="nomes">
+                <p>Gilberto Hideaki Matsunaga</p>
+                <p>RM 568191</p>
+            </div>
+            <div class="nomes">
+                <p>Gilberto Hideaki Matsunaga</p>
+                <p>RM 568191</p>
+            </div>
+            <div class="nomes">
+                <p>Gilberto Hideaki Matsunaga</p>
+                <p>RM 568191</p>
+            </div>
+        </div>
+        <div id="contatos">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
     </footer>
 
 </body>
