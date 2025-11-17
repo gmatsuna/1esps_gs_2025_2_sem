@@ -1,143 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>AgroTech - Início</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="./scripts/include.js"></script>
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#banner"><i class='bx  bx-home'    ></i> Banner</a></li>
-                <li><a href="#materia"><i class='bx  bx-newspaper'    ></i>   Matéria</a></li>
-                <li><a href="#tecnologias"><i class='bx  bx-solar-panel'    ></i>  Tecnologias</a></li>
-                <li><a href="#resultados"><i class='bx  bx-happy-beaming'    ></i>  Resultados</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div include-html="header.html"></div>
 
-    <main>
-        <div id="banner">
-            <img src="./images/logo.png" alt="">
-        </div>
-        <div id="materia">
-            <div id="materia__texto">
-                <h1>A evolução da tecnologia no agronegócio</h1>
-                <p>A história do agronegócio é uma marcha constante rumo à eficiência. Começa com a força humana e animal, atravessa a era das máquinas e hoje floresce em sensores, dados e inteligência. O campo, antes guiado pela experiência empírica, passou a conversar com satélites, algoritmos e dispositivos capazes de medir desde umidade do solo até o humor do clima. Máquinas se tornaram inteligentes, sistemas de irrigação aprenderam a economizar água, drones observaram lavouras com olhos de águia e softwares transformaram decisões intuitivas em estratégias apoiadas por dados. Essa evolução não substituiu o produtor; ampliou seu alcance, deixando o trabalho mais preciso, sustentável e produtivo. O resultado é um agronegócio que planta inovação e colhe eficiência.</p>
-            </div>
-            <div id="materia__img">
-                <img src="./images/img01.png" alt="">
-            </div>
-        </div>
-        <div id="tecnologias">
-            <h1>Máquinas e Tecnologias</h1>
-            <div id="tecnologias__box">
-                <div class="tecnologias__itens">
-                    <img src="./images/drone.png" alt="Drone">
-                    <div class="tecnologias__texto">
-                        <h3>Drones agrícolas em ação</h3>
-                        <p>Drone de alta precisão sobrevoando um campo verde, capturando dados com sensores multispectrais, céu azul, estilo realista, foco em agricultura de precisão.</p>
-                    </div>
-                </div>
-                <div class="tecnologias__itens">
-                    <img src="./images/trator.png" alt="Trator">
-                    <div class="tecnologias__texto">
-                        <h3>Tratores autônomos</h3>
-                        <p>Trator autônomo moderno operando sozinho em uma plantação, com paineis digitais e sensores, estilo fotográfico, tecnologia avançada integrada ao campo.</p>
-                    </div>
-                </div>
-                <div class="tecnologias__itens">
-                    <img src="./images/IOT.png" alt="iot">
-                    <div class="tecnologias__texto">
-                        <h3>Sensores IoT no solo</h3>
-                        <p>Sensores IoT instalados no solo úmido, medindo umidade e nutrientes em tempo real, perspectiva próxima, fundo com plantação verde vibrante.</p>
-                    </div>
-                </div>
-                <div class="tecnologias__itens">
-                    <img src="./images/estufa.webp" alt="estufa">
-                    <div class="tecnologias__texto">
-                        <h3>Estufa inteligente</h3>
-                        <p>Estufa automatizada com LEDs de crescimento, painéis de controle digitais, irrigação automatizada e plantas organizadas em fileiras, estilo realista.</p>
-                    </div>
-                </div>
-                <div class="tecnologias__itens">
-                    <img src="./images/satelite.webp" alt="Satélite">
-                    <div class="tecnologias__texto">
-                        <h3>Satélite monitorando áreas rurais</h3>
-                        <p>Visão artística realista de um satélite observando áreas agrícolas, com mapa térmico ou NDVI sendo analisado, atmosfera moderna e tecnológica.</p>
-                    </div>
-                </div>
-                <div class="tecnologias__itens">
-                    <img src="./images/robo.webp" alt="robo no campo">
-                    <div class="tecnologias__texto">
-                        <h3>Robotização no campo</h3>
-                        <p>Robô agrícola realizando colheita seletiva em um pomar, com braços mecânicos precisos, fruta sendo colhida sem danos, estilo fotográfico.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="resultados">
-            <h1>Resultados</h1>
-            <div id="resultados__box">
-                <div class="resultados__itens">
-                    <img src="./images/precisao.jpg" alt="Agricultura de Precisão">
-                    <div class="resultados__texto" id="precisao">
-                        <h3>Agricultura de Precisão</h3>
-                        <p>Com o uso de GPS, sensores de solo e drones, os produtores conseguem mapear suas lavouras com alta precisão, aplicando insumos (fertilizantes, defensivos, sementes) apenas onde é realmente necessário. Isso reduz custos, aumenta a produtividade e minimiza o impacto ambiental.</p>
-                        <br>
-                        <p>Uma lavoura vasta e verde, com fileiras perfeitamente alinhadas de plantas saudáveis sob um céu azul limpo. A iluminação é natural, em tom quente de fim de tarde, destacando o brilho das folhas e a uniformidade do cultivo. Ao fundo, é possível ver discretamente um trator moderno ou drone pequeno, apenas sugerindo o uso de tecnologia, mas o foco é o campo produtivo e próspero.</p>
-                    </div>
-                </div>
-                <div class="resultados__itens">
-                    <div class="resultados__texto" id="maquinas">
-                        <h3>Máquinas Autônomas e Inteligentes</h3>
-                        <p>Tratores e colheitadeiras equipados com inteligência artificial e sensores IoT operam de forma autônoma, monitorando em tempo real as condições do solo, umidade e rendimento. Isso aumenta a eficiência e reduz a necessidade de mão de obra direta nas operações.</p>
-                        <br>
-                        <p>Uma plantação dourada de trigo recém-colhida, com linhas perfeitas e simétricas que mostram precisão nas operações. Ao fundo, uma máquina moderna autônoma (sem operador visível) se desloca sozinha sob o sol da manhã. O foco está nos rastros retos e uniformes deixados no solo</p>
-                    </div>
-                    <img src="./images/maquinas.jpg" alt="Máquinas Autônomas e Inteligentes">
 
-                </div>
-                <div class="resultados__itens">
-                    <img src="./images/irigacao.jpg" alt="Irrigação Inteligente e Sustentável">
-                    <div class="resultados__texto" id="irrigacao">
-                        <h3>Irrigação Inteligente e Sustentável</h3>
-                        <p>Sistemas de irrigação conectados à IoT e integrados a estações meteorológicas fazem o controle automático da água conforme a necessidade real das plantas, economizando até 40% do consumo. Essa automação garante sustentabilidade e maior produtividade.</p>
-                        <br>
-                        <p>Um campo verde vibrante e uniforme, com fileiras de plantas perfeitamente hidratadas sob a luz suave do amanhecer. Pequenos jatos de água saem de um sistema de irrigação moderno (pivô central ou aspersores automáticos), criando uma leve névoa que reflete a luz do sol. O solo parece úmido e fértil, sem excesso de água, transmitindo equilíbrio e eficiência. No horizonte, sensores discretos ou uma estação meteorológica podem ser vistos, sugerindo automação.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    <section class="hero-banner" aria-label="Banner principal">
+        <img src="logo.png" alt="Logotipo AgroTech" class="hero-logo">
+        <div class="hero-bg" role="img" aria-hidden="true"></div>
 
-    <footer>
-        <div id="rm">
-            <div class="nomes">
-                <p>Gilberto Hideaki Matsunaga</p>
-                <p>RM 568191</p>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Tecnologia que transforma o campo</h1>
+            <p>Inovação e sustentabilidade para aumentar produtividade e reduzir desperdício de água.</p>
+            <a href="evolucao.html" class="btn-cta">Saiba mais</a>
+        </div>
+    </section>
+
+    <section class="why-tech">
+        <h2>Por que a tecnologia é essencial?</h2>
+        <p>A tecnologia permite produzir mais com menos recursos, garantindo eficiência e sustentabilidade no
+            agronegócio.</p>
+        <p>Com sensores, automação e sistemas inteligentes, os produtores tomam decisões mais precisas, reduzindo
+            desperdícios e aumentando a produtividade.</p>
+        <p>Além disso, soluções digitais tornam o campo mais competitivo e preparado para os desafios do futuro.</p>
+    </section>
+
+    <section class="cards">
+        <h2>Principais Tecnologias</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Agricultura de Precisão</h3>
+                <p>Uso de sensores, mapas e dados para aumentar a eficiência no plantio.</p>
             </div>
-            <div class="nomes">
-                <p>Gilberto Hideaki Matsunaga</p>
-                <p>RM 568191</p>
+            <div class="card">
+                <h3>Máquinas Autônomas</h3>
+                <p>Equipamentos inteligentes que operam com mínima intervenção humana.</p>
             </div>
-            <div class="nomes">
-                <p>Gilberto Hideaki Matsunaga</p>
-                <p>RM 568191</p>
+            <div class="card">
+                <h3>Irrigação Inteligente</h3>
+                <p>Sistemas que economizam água e garantem hidratação ideal do solo.</p>
             </div>
         </div>
-        <div id="contatos">
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+    </section>
+
+    <section class="beneficios">
+        <h2>Benefícios da Tecnologia no Campo</h2>
+        <div class="beneficios-list">
+        <div class="beneficio-item">🌱 Maior produtividade</div>
+        <div class="beneficio-item">💧 Economia de água</div>
+        <div class="beneficio-item">🚜 Operações mais precisas</div>
+        <div class="beneficio-item">📊 Monitoramento em tempo real</div>
         </div>
-    </footer>
+    </section>
+
+    <div include-html="footer.html"></div>
 
 </body>
+
 </html>
