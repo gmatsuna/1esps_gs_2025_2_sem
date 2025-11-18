@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,77 @@
     <script defer src="./scripts/include.js"></script>
     <title>Tecnologias - AgroTech</title>
 </head>
+
 <body>
     <div include-html="header.html"></div>
-    <header class="banner">
+    <header id="banner" class="banner">
         <div class="banner-content">
-            <h2>Tecnologias no Agronegócio</h2>
+            <h1>Tecnologias no Agronegócio</h1>
             <p>Inovação que transforma o campo.</p>
         </div>
     </header>
 
     <main>
 
-        <section class="conteudo-pagina">
-            <h2>Principais Tecnologias Utilizadas</h2>
+        <section id="tecnologias">
+            <h1 class="titulo-tecnologias">Tecnologias no Agronegócio</h1>
 
-            <ul class="lista-tec">
-                <li>🌱 Sensores de solo</li>
-                <li>🛰️ Monitoramento por satélite</li>
-                <li>🚜 Máquinas autônomas</li>
-                <li>💧 Sistemas de irrigação inteligente</li>
-                <li>📡 Internet das Coisas (IoT)</li>
-                <li>🤖 Inteligência artificial</li>
-                <li>🛩️ Drones agrícolas</li>
-            </ul>
+            <div class="grid-tec">
+
+                <!-- 1 - Drones -->
+                <div class="tec-item">
+                    <img src="./img/drone.png" alt="Drones agrícolas">
+                    <h3>Drones agrícolas em ação</h3>
+                    <p>Drone de alta precisão sobrevoando o campo, capturando dados com sensores multispectrais e
+                        auxiliando na agricultura de precisão.</p>
+                </div>
+
+                <!-- 2 - Tratores Autônomos -->
+                <div class="tec-item">
+                    <img src="./img/trator.jpg" alt="Tratores autônomos">
+                    <h3>Tratores autônomos</h3>
+                    <p>Máquinas modernas capazes de operar sozinhas, com sensores inteligentes e monitoramento remoto,
+                        aumentando a produtividade.</p>
+                </div>
+
+                <!-- 3 - Sensores IoT -->
+                <div class="tec-item">
+                    <img src="./img/IOT.png" alt="Sensores IoT no solo">
+                    <h3>Sensores IoT no solo</h3>
+                    <p>Sensores que medem umidade, nutrientes e dados ambientais em tempo real, otimizando a irrigação e
+                        o manejo agrícola.</p>
+                </div>
+
+                <!-- 4 - Estufas inteligentes -->
+                <div class="tec-item">
+                    <img src="./img/estufa.webp" alt="Estufa inteligente">
+                    <h3>Estufa inteligente</h3>
+                    <p>Ambientes automatizados com controle digital de iluminação, irrigação e clima, garantindo
+                        crescimento ideal das plantas.</p>
+                </div>
+
+                <!-- 5 - Satélites -->
+                <div class="tec-item">
+                    <img src="./img/satelite.jpg" alt="Satélite monitorando áreas rurais">
+                    <h3>Satélites monitorando áreas rurais</h3>
+                    <p>Monitoramento por satélite com imagens NDVI e mapas térmicos, permitindo análises de saúde da
+                        lavoura em larga escala.</p>
+                </div>
+
+                <!-- 6 - Robótica -->
+                <div class="tec-item">
+                    <img src="./img/robo.webp" alt="Robotização no campo">
+                    <h3>Robotização no campo</h3>
+                    <p>Robôs agrícolas capazes de realizar colheita seletiva, manejo de plantas e operações com precisão
+                        e eficiência.</p>
+                </div>
+
+            </div>
         </section>
 
     </main>
+
     <div include-html="footer.html"></div>
 </body>
+
 </html>

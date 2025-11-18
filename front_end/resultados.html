@@ -12,7 +12,7 @@
 
 <body>
     <div include-html="header.html"></div>
-    <header class="banner">
+    <header id="banner" class="banner">
         <div class="banner-content">
             <h2>Resultados da Transformação Tecnológica</h2>
             <p>Impactos reais da modernização no agronegócio</p>
@@ -21,78 +21,58 @@
 
     <main>
 
-        <!-- Introdução -->
-        <section class="conteudo-pagina">
-            <h2>Os avanços que a tecnologia trouxe ao campo</h2>
-            <p>
-                A implementação de tecnologias agrícolas modernas gerou ganhos significativos
-                em produtividade, economia de recursos, sustentabilidade e eficiência operacional.
-            </p>
-        </section>
-
-        <!-- Cards de resultados -->
-        <section class="resultados-cards">
-
-            <div class="card">
-                <h3>⬆ Aumento de Produtividade</h3>
-                <p>
-                    Produções até 40% maiores com o uso de automação, sensores e análise de dados.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>💧 Redução de Consumo de Água</h3>
-                <p>
-                    Irrigação inteligente reduz desperdícios e otimiza o uso hídrico em até 30%.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🚜 Otimização Operacional</h3>
-                <p>
-                    Máquinas autônomas reduzem custos e aumentam a precisão no manejo do solo.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🌱 Sustentabilidade</h3>
-                <p>
-                    Práticas mais limpas diminuem impactos ambientais e aumentam a longevidade do solo.
-                </p>
-            </div>
-
-        </section>
-
-        <!-- Comparação Antes x Depois -->
-        <section class="antes-depois">
-            <h2>Antes x Depois da Transformação Digital</h2>
-
-            <div class="comparacao">
-
-                <div class="coluna">
-                    <h3>Antes</h3>
-                    <ul>
-                        <li>Decisões baseadas em experiência, sem dados</li>
-                        <li>Mais desperdício de insumos</li>
-                        <li>Processos totalmente manuais</li>
-                        <li>Baixa produtividade por hectare</li>
-                        <li>Monitoramento limitado</li>
-                    </ul>
+        <div id="resultados">
+            <h1>Resultados</h1>
+            <div id="resultados__box">
+                <div class="resultados__itens">
+                    <img src="../img/precisao.jpg" alt="Agricultura de Precisão">
+                    <div class="resultados__texto" id="precisao">
+                        <h3>Agricultura de Precisão</h3>
+                        <p>Com o uso de GPS, sensores de solo e drones, os produtores conseguem mapear suas lavouras com
+                            alta precisão, aplicando insumos (fertilizantes, defensivos, sementes) apenas onde é
+                            realmente necessário. Isso reduz custos, aumenta a produtividade e minimiza o impacto
+                            ambiental.</p>
+                        <br>
+                        <p>Uma lavoura vasta e verde, com fileiras perfeitamente alinhadas de plantas saudáveis sob um
+                            céu azul limpo. A iluminação é natural, em tom quente de fim de tarde, destacando o brilho
+                            das folhas e a uniformidade do cultivo. Ao fundo, é possível ver discretamente um trator
+                            moderno ou drone pequeno, apenas sugerindo o uso de tecnologia, mas o foco é o campo
+                            produtivo e próspero.</p>
+                    </div>
                 </div>
+                <div class="resultados__itens">
+                    <div class="resultados__texto" id="maquinas">
+                        <h3>Máquinas Autônomas e Inteligentes</h3>
+                        <p>Tratores e colheitadeiras equipados com inteligência artificial e sensores IoT operam de
+                            forma autônoma, monitorando em tempo real as condições do solo, umidade e rendimento. Isso
+                            aumenta a eficiência e reduz a necessidade de mão de obra direta nas operações.</p>
+                        <br>
+                        <p>Uma plantação dourada de trigo recém-colhida, com linhas perfeitas e simétricas que mostram
+                            precisão nas operações. Ao fundo, uma máquina moderna autônoma (sem operador visível) se
+                            desloca sozinha sob o sol da manhã. O foco está nos rastros retos e uniformes deixados no
+                            solo</p>
+                    </div>
+                    <img src="../img/maquinas.jpg" alt="Máquinas Autônomas e Inteligentes">
 
-                <div class="coluna">
-                    <h3>Depois</h3>
-                    <ul>
-                        <li>Uso de dados e IA para decisões precisas</li>
-                        <li>Controle inteligente de recursos</li>
-                        <li>Automação e máquinas conectadas</li>
-                        <li>Produtividade muito maior</li>
-                        <li>Monitoramento em tempo real</li>
-                    </ul>
                 </div>
-
+                <div class="resultados__itens">
+                    <img src="../img/irigacao.jpg" alt="Irrigação Inteligente e Sustentável">
+                    <div class="resultados__texto" id="irrigacao">
+                        <h3>Irrigação Inteligente e Sustentável</h3>
+                        <p>Sistemas de irrigação conectados à IoT e integrados a estações meteorológicas fazem o
+                            controle automático da água conforme a necessidade real das plantas, economizando até 40% do
+                            consumo. Essa automação garante sustentabilidade e maior produtividade.</p>
+                        <br>
+                        <p>Um campo verde vibrante e uniforme, com fileiras de plantas perfeitamente hidratadas sob a
+                            luz suave do amanhecer. Pequenos jatos de água saem de um sistema de irrigação moderno (pivô
+                            central ou aspersores automáticos), criando uma leve névoa que reflete a luz do sol. O solo
+                            parece úmido e fértil, sem excesso de água, transmitindo equilíbrio e eficiência. No
+                            horizonte, sensores discretos ou uma estação meteorológica podem ser vistos, sugerindo
+                            automação.</p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
     </main>
     <div include-html="footer.html"></div>
