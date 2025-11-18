@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --header-height: 72px; /* ajuste se seu header for maior/menor */
+  --max-width: 1300px;
+  --blue-bg: #0c5a99;
+  --accent: #0c5f37;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +21,15 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    height: var(--header-height);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0c5f37;
-    padding: 15px 30px;
-    z-index: 1000;
+    background: var(--accent);
+    padding: 0 5%;
+    z-index: 1100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .logo {
@@ -54,8 +63,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 40px;
+    padding: calc(var(--header-height) + 20px) 6% 40px;
     position: relative;
     margin-top: 65px;
 }
@@ -175,6 +183,7 @@ body {
     }
 }
 
+
 /* Rodapé */
 .footer {
     background: #0c5f37;
@@ -229,6 +238,7 @@ body {
     margin: 25px;
     color: #ffffff;
 }
+
 
 /* --- Página Evolução --- */
 
@@ -294,9 +304,9 @@ body {
 }
 
 /* SEÇÃO DE TECNOLOGIAS */
-.tecnologias {
+#tecnologias {
     width: 100%;
-    background: #0c5a99;
+    background: var(--blue-bg);
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
@@ -304,116 +314,6 @@ body {
     gap: 60px;
 }
 
-.tecnologias-container {
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px 50px;
-}
-
-.tech-item {
-    width: 30%;
-    min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    color: white;
-}
-
-.tech-item img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 120px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-.tech-item h3 {
-    margin-top: 20px;
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.tech-item p {
-    font-size: 1rem;
-    line-height: 1.4rem;
-    opacity: 0.9;
-    margin-top: 6px;
-}
-
-/* --- Variáveis e reset específico --- */
-:root {
-  --header-height: 72px; /* ajuste se seu header for maior/menor */
-  --max-width: 1300px;
-  --blue-bg: #0c5a99;
-  --accent: #0c5f37;
-}
-
-* { box-sizing: border-box; }
-
-/* --- Header (caso não exista no CSS principal) --- 
-   mantém o topo fixo e garante z-index alto */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5%;
-  background: var(--accent);
-  z-index: 1100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-/* --- Evita faixa branca e margens inesperadas --- */
-html, body, main, section {
-  margin: 0;
-  padding: 0;
-}
-
-/* --- Banner: acrescenta espaço superior compatível com header fixo --- */
-.banner {
-  width: 100%;
-  height: 420px;
-  background-image: url("../img/banner.png"); /* ajuste caminho se necessário */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  padding: calc(var(--header-height) + 20px) 6% 40px; /* garante não ficar embaixo do header */
-  position: relative;
-  color: #fff;
-}
-
-/* leve overlay */
-.banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,0.26) 0%, rgba(0,0,0,0.06) 60%);
-  z-index: 1;
-}
-.banner .banner-content { position: relative; z-index: 2; max-width: 900px; }
-
-/* --- Seção Tecnologias (container principal) --- */
-#tecnologias {
-  width: 100%;
-  background: var(--blue-bg);
-  padding: 48px 20px 64px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 28px;
-  box-sizing: border-box;
-}
-
-/* título central */
 #tecnologias .titulo-tecnologias {
   color: #fff;
   font-size: 2rem;
@@ -421,7 +321,6 @@ html, body, main, section {
   text-align: center;
 }
 
-/* container dos itens: Flexbox com wrap */
 .grid-tec {
   width: 100%;
   max-width: var(--max-width);
@@ -433,7 +332,6 @@ html, body, main, section {
   box-sizing: border-box;
 }
 
-/* cada item - 3 por linha usando flex-basis */
 .tec-item {
   flex: 0 1 calc(33.333% - 30px); /* 3 colunas com espaço para gaps */
   display: flex;
@@ -446,7 +344,10 @@ html, body, main, section {
   padding: 0 8px;
 }
 
-/* Imagem oval */
+.tec-item:hover {
+    transform: translateY(-15px);
+}
+
 .tec-item img {
   width: 100%;
   max-width: 360px;
@@ -459,7 +360,6 @@ html, body, main, section {
   margin-bottom: 16px;
 }
 
-/* Tipografia do item */
 .tec-item h3 {
   font-size: 1.2rem;
   margin: 6px 0 8px;
@@ -494,36 +394,6 @@ html, body, main, section {
   }
   .tec-item img { max-width: 320px; height: 200px; margin-bottom: 12px; }
   #tecnologias { padding: 36px 12px 48px; }
-}
-
-/* --- Footer fix / remove faixa branca --- */
-footer {
-  margin-top: 0;
-  padding: 34px 6%;
-  background: #0a4b2f; /* manter seu tom de footer */
-  color: #fff;
-  box-sizing: border-box;
-}
-
-/* se houver uma div include para footer, garanta que fique colada */
-[include-html] + footer,
-section + footer {
-  margin-top: 0;
-  padding-top: 20px;
-}
-
-/* pequeno helper para garantir que main ocupe espaço e empurre footer */
-main {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* --- Toques visuais (opcional) --- */
-.tec-item:hover {
-  transform: translateY(-6px);
-  transition: transform .18s ease;
-  filter: brightness(1.02);
 }
 
 #resultados {
