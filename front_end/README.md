@@ -124,7 +124,7 @@ Arquivo `integrantes.txt` contém:
 
 2. Navegue até a pasta front_end
 
-3. Abra o arquivo principal index.html com o live server
+3. Abra o arquivo principal index.html com o live server ou em um navegador
 
 4. Navegue pelo menu superior
 
