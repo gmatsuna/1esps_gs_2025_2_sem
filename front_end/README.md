@@ -66,20 +66,20 @@ O projeto contém **quatro páginas principais**, acessíveis através de um men
 
 ## 🧩 Organização do Projeto
 
-📦 Projeto AgroTech
-├── 📁 css
-│ └── style.css
-├── 📁 img
-│ └── (imagens do projeto)
-├── 📁 scripts
-│ └── include.js
-├── header.html
-├── footer.html
-├── index.html
-├── evolucao.html
-├── tecnologias.html
-├── resultados.html
-└── integrantes.txt
+📦 Projeto AgroTech  
+├── 📁 css  
+│ └── style.css  
+├── 📁 img  
+│ └── (imagens do projeto)  
+├── 📁 scripts  
+│ └── include.js  
+├── header.html  
+├── footer.html  
+├── index.html  
+├── evolucao.html  
+├── tecnologias.html  
+├── resultados.html  
+└── integrantes.txt  
 
 ---
 
