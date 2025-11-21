@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Raiz Digital – Futuro do Trabalho no Campo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="logo">
+      <span class="logo-marca">Raiz</span>
+      <span class="logo-digital">Digital</span>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="projeto.html">O Projeto</a>
+      <a href="comunidade.html">Comunidade</a>
+      <a href="inscricao.html" class="ativo">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="secao cabecalho-pagina">
+      <h1>Cadastro de Interesse – Raiz Digital</h1>
+      <p>
+        Preencha o formulário abaixo para demonstrar interesse em participar das oficinas,
+        encontros e formações do Raiz Digital, focadas no futuro do trabalho no agronegócio.
+      </p>
+    </section>
+
+    <section class="secao secao-central">
+      <form id="formRaizDigital" class="formulario">
+        <div class="campo-form">
+          <label for="nomeCompleto">Nome completo*</label>
+          <input type="text" id="nomeCompleto" placeholder="Seu nome completo">
+        </div>
+
+        <div class="campo-form">
+          <label for="cpf">CPF*</label>
+          <input type="text" id="cpf" placeholder="Apenas números ou com pontuação">
+        </div>
+
+        <div class="campo-form">
+          <label for="email">E-mail*</label>
+          <input type="text" id="email" placeholder="seuemail@exemplo.com">
+        </div>
+
+        <div class="campo-form">
+          <label for="listaHabilidades">Lista de habilidades (escolha e clique em “Adicionar”)</label>
+          <select id="listaHabilidades">
+            <option value="">Selecione uma habilidade</option>
+            <option value="Manejo de solo">Manejo de solo</option>
+            <option value="Irrigação eficiente">Irrigação eficiente</option>
+            <option value="Gestão de pequena propriedade">Gestão de pequena propriedade</option>
+            <option value="Cooperativismo e trabalho em grupo">Cooperativismo e trabalho em grupo</option>
+            <option value="Comercialização e vendas diretas">Comercialização e vendas diretas</option>
+            <option value="Produção sustentável">Produção sustentável</option>
+          </select>
+          <button type="button" id="btnAdicionarHabilidade">Adicionar habilidade</button>
+        </div>
+
+        <div class="campo-form">
+          <label>Habilidades adicionadas*</label>
+          <ul id="listaHabilidadesAdicionadas" class="lista-habilidades">
+            <!-- habilidades aparecem aqui -->
+          </ul>
+          <small>Adicione pelo menos 3 habilidades antes de enviar.</small>
+        </div>
+
+        <div class="campo-form">
+          <span>Tipo de interesse*</span>
+          <div class="grupo-opcoes">
+            <label>
+              <input type="radio" name="tipoInteresse" value="Oficinas presenciais no campo">
+              Oficinas presenciais no campo
+            </label>
+            <label>
+              <input type="radio" name="tipoInteresse" value="Formações itinerantes em propriedades parceiras">
+              Formações itinerantes em propriedades parceiras
+            </label>
+            <label>
+              <input type="radio" name="tipoInteresse" value="Encontros de compartilhamento de experiências">
+              Encontros de compartilhamento de experiências
+            </label>
+            <label>
+              <input type="radio" name="tipoInteresse" value="Programa jovem no campo">
+              Programa jovem no campo
+            </label>
+          </div>
+        </div>
+
+        <div class="campo-form">
+          <button type="button" id="btnEnviarFormulario" class="botao-primario">
+            Enviar cadastro
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="secao secao-central">
+      <h2>Resultado da validação</h2>
+      <div id="feedback" class="feedback">
+        <!-- mensagens de erro ou sucesso aparecem aqui -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Raiz Digital – Global Solution 2025 • Formulário Interativo</p>
+  </footer>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
